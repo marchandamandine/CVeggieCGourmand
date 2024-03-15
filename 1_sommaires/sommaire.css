@@ -1,0 +1,232 @@
+.contenu{   /*contenu du sommaire*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 150px 20px 70px 310px;
+    margin:20px;
+}
+
+.titre{   /* titre thématique de la page*/
+    display: grid;
+    background-color: rgb(246, 239, 245);
+    font-family: 'Amaranth', sans-serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-left: 15px;
+    place-content: center;
+    align-items: center;
+
+    grid-column: 2/4;
+    grid-row:1/2;
+
+}
+
+.soustitre{   /*sous titre de la page*/
+    display: grid;
+    background-color: rgb(246, 239, 245);
+    font-family: 'Handlee', cursive;
+    font-size: 1.3em;
+    font-weight: 500;
+    justify-content: center;
+    text-align: center;
+    margin-left: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
+
+    grid-column:2/4;
+    grid-row:2/3;
+}
+
+
+.titreliste{    /*texte qui annonce la liste de recettes*/
+    display: grid;
+    background-color: rgb(252, 234, 249);
+    font-family: 'Lato', sans-serif;
+    font-size:1.7em;
+    justify-content: center;
+    align-items: end;
+    margin-left: 15px;
+
+    grid-column:2/4;
+    grid-row:4/5;
+
+}
+
+
+.liste{     /*liste de recettes*/
+    display: grid;
+    background-color: rgb(252, 234, 249);
+    font-family: 'Lato', sans-serif;
+    font-size:1.5em;
+    font-weight: 700;
+    justify-content: center ;
+    margin-left: 15px;
+    line-height: 150%;
+
+    grid-column:2/4;
+    grid-row:5/6;
+}
+
+
+
+.image{    /*illustration de la page*/
+    display: grid;
+
+    grid-column: 1/2;
+    grid-row:1/6;
+}
+
+img{    /*illustration de la page*/
+    height:auto;
+    width:100%;
+}
+
+@media all and (max-width:1100px){
+    .contenu{   /*contenu du sommaire*/
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100px 150px 20px 70px 310px;
+        margin:20px;
+    }
+    .titre{
+        grid-column: 2/4;
+        grid-row: 1/2;
+        font-size:2.2em;
+    }
+    .soustitre{
+        grid-column: 2/4;
+        grid-row: 2/3;
+        font-size:1.1em;
+    }
+    .titreliste{
+        grid-column:1/4;
+        grid-row:4/5;
+        font-size:1.5em;
+        margin-left: 0px;
+    }
+    .liste{
+        grid-column:1/4;
+        grid-row:5/6;
+        font-size:1.2em;
+        margin-left: 0px;
+    }
+    .image{   
+        grid-column: 1/2;
+        grid-row:1/3;
+        justify-content: center;
+    }
+
+    #illustration{
+        height:250px;
+        width:auto;
+    }
+    }
+
+
+
+    @media all and (max-width:765px){
+        .titre{
+            font-size:1.9em;
+        }
+        .soustitre{
+            font-size:0.9em;
+        }
+        .titreliste{
+            font-size:1.3em;
+        }
+        .liste{
+            font-size:1em;
+        }
+        .image{
+            place-content: center;
+        }
+        #illustration{
+            height:200px;
+            width:auto;
+        }
+    }
+
+    
+    @media all and (max-width:585px){
+        .contenu{   
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 80px 130px 20px 50px 280px;
+            margin:20px;
+        }
+        .titre{
+            font-size:1.5em;
+        }
+        .soustitre{
+            font-size:0.8em;
+        }
+        .titreliste{
+            font-size:1.2em;
+        }
+        .liste{
+            font-size:0.9em;
+        }
+
+        #illustration{
+            height:170px;
+            width:auto;
+        }
+    }
+
+    
+    
+    @media all and (max-width:530px){
+        .contenu{   
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 70px 110px 10px 40px 250px;
+            margin:20px;
+        }
+        .titre{
+            font-size:1.3em;
+        }
+        .soustitre{
+            font-size:0.7em;
+        }
+        .titreliste{
+            font-size:1em;
+        }
+        .liste{
+            font-size:0.8em;
+        }
+
+        #illustration{
+            height:140px;
+            width:auto;
+        }
+    }
+
+
+    @media all and (max-width:460px){
+        .contenu{   
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 40px 90px 10px 20px 180px;
+            margin:20px;
+        }
+        .titre{
+            font-size:1em;
+            margin-left: 0px;
+        }
+        .soustitre{
+            font-size:0.5em;
+            margin-left: 0px;
+        }
+        .titreliste{
+            font-size:0.6em;
+        }
+        .liste{
+            font-size:0.6em;
+        }
+        .image{
+            margin-right: 5px;
+        }
+        #illustration{
+            height:100px;
+            width:auto;
+        }
+    }
